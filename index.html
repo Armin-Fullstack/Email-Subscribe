@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
     <title>Email Subscribe</title>
 </head>
 <body class="bg-zinc-700 flex justify-center items-center h-screen">
 
         <!-- Box Container -->
-        <div class="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-1 bg-zinc-800 p-2 rounded-2xl">
+        <div class="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-1 bg-zinc-800 p-2 mx-6 rounded-2xl shadow-xl shadow-slate-500">
             <!-- Image -->
-            <div>
-                <img src="images/image.jpg" alt="diet">
-            </div>
+            
+                <img src="images/image.jpg" alt="diet" class="h-80 md:h-64 rounded-lg md:rounded-l-lg md:rounded-none hover:rounded-lg transform hover:scale-105 duration-200 w-full">
+            
 
             <!-- Content -->
-            <div>
-                <h1>Get diet and fitness tips in your inbox</h1>
-                <p>Eat better and exercise better. Sign up for the Diet&Fitness newsletter.</p>
+            <div class="text-center md:text-left text-white p-6 md:p-12 space-y-5">
+                <h1 class="font-extrabold text-lg tracking-wider">Get diet and fitness tips in your inbox</h1>
+                <p class="text-xs max-w-xs leading-5 tracking-wide">Eat better and exercise better. Sign up for the Diet&Fitness newsletter.</p>
 
                 <!-- Input & Submit button container -->
-                <div class="flex flex-col md:flex-row">
-                    <input type="email" placeholder="Enter your email address">
-                    <button>Subscribe</button>
+                <div class="flex flex-col md:flex-row space-y-4         md:space-y-0 md:space-x-3">
+                    <input type="email" placeholder="Enter your email address" class="outline-none p-2 px-4 bg-zinc-800 text-center placeholder:text-xs placeholder:text-center md:placeholder:text-left md:text-left border border-zinc-600">
+                    <button class="bg-lime-500 px-5 py-3 rounded-md text-xs text-zinc-800 hover:text-white hover:bg-lime-700 duration-500">Subscribe</button>
                 </div>
             </div>
 
